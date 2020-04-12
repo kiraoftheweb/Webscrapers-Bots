@@ -15,10 +15,7 @@ indices = [i for i, x in enumerate(scraper) if "clone_url" in x]
 
 f = open("starred.txt", "w")
 print(len(indices))
-r = 0
 while r < (len(indices)):
     d = int(indices[r])
     print(scraper[d + 2])
     f.write(f"{scraper[d +2]}\n")
-
-    r += 1
